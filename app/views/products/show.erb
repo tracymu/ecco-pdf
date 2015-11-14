@@ -1,1 +1,26 @@
-<%= @product.product_name %>
+<div class='header'>
+	<div class='product-name'>
+		<p><%= @product.product_name %></p>
+	</div>
+	<div class='product-code'>
+		<p><%= @product.product_code %></p>
+	</div>
+</div>
+<div class='body'>
+	<div class='image-panel'>
+		<img src='/assets/images/product_images/product_<%= @product.image_code %>.png' />
+	</div>
+	<div class='text-panel'>
+		<h2>Product Features</h2>
+		<p><%= @product.product_features %> </p>
+	</div>
+	<div class='drawing-panel'>
+		<div class='dimensions'>
+			<h2>Product Dimensions</h2>
+			<p><%= @product.dimensions %> </p>
+		</div>
+		<div class='drawing'>
+			<img src='/assets/images/product_specs/product_<%= @product.image_code %>.png' />
+		</div>
+	</div>
+</div>
